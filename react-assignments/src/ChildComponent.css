@@ -1,0 +1,16 @@
+body {
+  font-family: "Helvetica", sans-serif;
+  color: #800020;
+  line-height: 1.5;
+  padding: 2rem;
+}
+
+p,
+li {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}

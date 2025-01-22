@@ -1,16 +1,17 @@
 import "./App.css";
-import PropsComponent from "./Components/MyStateComponent/PropsComponent";
+// import PropsComponent from "./Components/MyStateComponent/PropsComponent";
+import GameOfThronesCharacters from "./Components/Effect/EffectsComponent";
 
 function App() {
-  const person = {
-    name: "John",
-    info: {
-      age: 25,
-      city: "New York",
-      job: "Developer",
-      hobbies: ["reading", "coding", "gaming"],
-    },
-  };
+  // const person = {
+  //   name: "John",
+  //   info: {
+  //     age: 25,
+  //     city: "New York",
+  //     job: "Developer",
+  //     hobbies: ["reading", "coding", "gaming"],
+  //   },
+  // };
 
   return (
     <div>
@@ -18,7 +19,8 @@ function App() {
         <h1>This is React</h1>
       </header>
       {/* TODO create a child component in proper jsx, the component takes the person object as props and render the data */}
-      <PropsComponent person={person} />
+      {/* <PropsComponent person={person} /> */}
+      <GameOfThronesCharacters />
     </div>
   );
 }

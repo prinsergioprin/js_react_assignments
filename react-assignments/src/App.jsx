@@ -1,5 +1,8 @@
 import EffectsComponent from "./Components/Effect/EffectsComponent";
 import "./App.css";
+import Nav from "./Components/Nav/Nav";
+import Homepage from "./Components/Homepage/Homepage";
+import { Routes, Route } from "react-router";
 import MyStateComponent from "./Components/MyStateComponent/MyStateComponent";
 import PropsComponent from "./Components/MyStateComponent/PropsComponent";
 
@@ -19,11 +22,14 @@ function App() {
     <div>
       <header>
         <h1>This is React</h1>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/effects" element={<EffectsComponent />} />
+          <Route path="/state" element={<MyStateComponent />} />
+          <Route path="/props" element={<PropsComponent person={person} />} />
+        </Routes>
       </header>
-      {/* TODO create a child component in proper jsx, the component takes the person object as props and render the data */}
-      {/* <PropsComponent person={person} /> */}
-      {/* <MyStateComponent /> */}
-      <EffectsComponent />
     </div>
   );
 }
